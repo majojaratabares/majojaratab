@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - IE San José</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header>
+    <h1>IE San José</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="proyectos.html">Proyectos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="en-contruccion.html">Contratanos</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h2>Nuestros Servicios</h2>
+
+    <section id="Servicios">
+        
+        <p></p>
+    </section>
+
+    <section id="servicios">
+        <h3>Nuestra institución ofrece los mejores recursos para que los estudiantes se sientan cómodos a la hora de estudiar, estos servicios son:</h3>
+        <ul>
+              
+            <li>Biblioteca</li>
+            <li>Laboratorio</li>
+            <li>Aulas como el teatro y zonas para estudiar.</li>
+            <li>Asesoría Psicológica.</li>
+            <li>Apoyo para estudiantes cono necesidades especiales.</li>
+            <li>Secretaría</li>
+            <li>Servicio de alimentación.</li>
+            <li>Instalaciones deportivas.</li>
+            <li>Servicio de enfermería.</li>
+            <li>Internet.</li>
+            <li>Computadores.</li>
+            <li>Agua potable.</li>
+            </ul>
+    </section>
+</main>
+
+
+<footer>
+    <p>&copy; IE San José.</p>
+</footer>
+<script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slider img');
+
+    function showSlide(n) {
+        currentSlide = (n + slides.length) % slides.length;
+        const offset = -currentSlide * 100;
+        document.querySelector('.slider').style.transform = `translateX(${offset}%)`;
+    }
+
+    function changeSlide(n) {
+        showSlide(currentSlide + n);
+    }
+
+    // Inicializar el slider
+    showSlide(0);
+</script>
+</body>
+</html>

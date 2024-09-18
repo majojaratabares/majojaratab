@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros - IE San José</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header>
+    <h1>IE San José</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="proyectos.html">Proyectos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="en-contruccion.html">Contratanos</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h2>Sobre Nosotros</h2>
+
+    <section id="historia">
+        <h3>Nuestra Historia</h3>
+        <p>La Institución Educativa fue fundada en el Gobierno de Guillermo León Valencia, bajo la ordenanza 30 en noviembre 1963, e inició labores en  febrero del año 1964 con el nombre de LICEO DEPARTAMENTAL FEMENINO, nombre que la posicionó como la única institución femenina oficial y comprometida en la  formación de valores y modales para las jóvenes del municipio de Itagüí creando un lazo de credibilidad alta con las familias.Para el 2012 la institución alcanza el nivel más alto de acuerdo al ICFES, ubicándose en Muy Superior.
+
+            En 2014 la Institución Educativa San José cumple 50 años de labor educativa, es galardonada con el Honor al Mérito Educativo en el orden nacional con la Gran Cruz Comendador de la Democracia Simón Bolívar, en el orden departamental con la Medalla “Jorge Robledo Ortiz” y la Medalla Cacique Bitagui en el orden municipal.  Continúa proyectándose como la mejor institución oficial del municipio de Itagüí. Implementa el proceso de Acreditación en Calidad con Proantioquia y el Proyecto Líderes Siglo XXI, Certificación en Calidad Institucional con el Operador GYO e ICONTEC; además de participar en Rectores Líderes Transformadores. Lidera convenios interinstitucionales con SENA, Unisabaneta, Tecnológico Débora Arango, Politécnico Jaime Isaza Cadavid. Fortalece alianzas con el sector productivo para la participación de las estudiantes en las prácticas empresariales. Mejora su inserción en el manejo de las TIC y participa activamente en el Plan Digital TESO. Continúa su trabajo con los asesores en la mejora pedagógica de la institución. Se empiezan a sistematizar todos los procesos pedagógicos de los docentes a través de la plataforma académica Master 2000. Se fortalecen las relaciones entre docentes, directivos docentes, estudiantes, egresadas y padres de familia en pro del bienestar institucional.</p>
+    </section>
+
+    <section id="mision-vision">
+        <h3>Misión y Visión</h3>
+        <h4>Misión</h4>
+        <p>Nuestra misión es Brindar una educación de calidad que impulse el desarrollo académico, social y emocional de nuestros estudiantes. Nos comprometemos a ofrecer un entorno seguro y estimulante, con un currículo innovador y personalizado que promueva el aprendizaje activo y el pensamiento crítico. Valoramos la colaboración entre estudiantes, familias y personal educativo para apoyar el crecimiento integral de cada alumno. Nuestra misión es preparar a nuestros estudiantes para que sean ciudadanos competentes y responsables, capaces de contribuir positivamente a su comunidad y afrontar con éxito los desafíos del futuro.</p>
+        <h4>Visión</h4>
+        <p>Aspiramos a ser una institución educativa de excelencia, comprometida con el desarrollo integral de nuestros estudiantes, fomentando un entorno inclusivo, innovador y respetuoso. Aspiramos a formar ciudadanos críticos, creativos y responsables, capaces de enfrentar los desafíos del mundo globalizado con valores sólidos y un espíritu de aprendizaje continuo. Nuestro objetivo es inspirar a cada estudiante a alcanzar su máximo potencial y a contribuir positivamente a la sociedad, promoviendo el respeto por la diversidad, el pensamiento crítico y el compromiso con el bienestar común.</p>
+    </section>
+
+    <section id="valores">
+        <h3>La Institución Educativa San José con su proyecto pedagógico, ha planeado de acuerdo al momento histórico y social el objetivo de preparar a los estudiantes para el próximo milenio, formando de una manera integral, personas con el conocimiento y el respeto de los Derechos Humanos que permitan la convivencia y el aprecio de valores como:</h3>
+        <ul>
+            <li>Respeto</li>
+            <li>Pluralidad</li>
+            <li>Honestidad</li>
+            <li>Pertenencia</li>
+            <li>Solidaridad</li>
+            <li>Equidad</li>
+            <li>Responsabilidad</li>
+        </ul>
+    </section>
+
+   
+
+    <section id="logros">
+        <h3>Nuestros Logros y Reconocimientos</h3>
+        <ul>
+            <li>Reconocimiento Nacional: En 2014, la institución recibió el Honor al Mérito Educativo en el orden nacional con la Gran Cruz Comendador de la Democracia Simón Bolívar.</li>
+            <li>Nivel Muy Superior: En 2012, la institución alcanzó el nivel más alto según el ICFES, ubicándose en "Muy Superior"</li>
+            <li>Fortalecimiento de la Educación: La institución ha fortalecido su oferta educativa con énfasis en comercio y media académica, y ha implementado programas de prácticas empresariales para sus estudiantes.</li>
+            <li>[Logro o reconocimiento 3]</li>
+            <li>[Logro o reconocimiento 3]</li>
+            <li>[Logro o reconocimiento 3]</li>
+        </ul>
+    </section>
+</main>
+
+
+<footer>
+    <p>&copy; IE José.</p>
+</footer>
+<script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slider img');
+
+    function showSlide(n) {
+        currentSlide = (n + slides.length) % slides.length;
+        const offset = -currentSlide * 100;
+        document.querySelector('.slider').style.transform = `translateX(${offset}%)`;
+    }
+
+    function changeSlide(n) {
+        showSlide(currentSlide + n);
+    }
+
+    // Inicializar el slider
+    showSlide(0);
+</script>
+</body>
+</html>

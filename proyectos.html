@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos - IE San José</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header>
+    <h1>IE San José</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="proyectos.html">Proyectos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="en-contruccion.html">Contratanos</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+    </ul>
+</nav>
+
+<main>
+   
+
+    <section id="proyectos">
+        <h3>Nuestros Proyectos</h3>
+
+     <li>Producción de un musical escolar.</li>
+    <li>Proyecto de innovación empresarial: Creación de un producto sostenible para reducir residuos.</li>
+    <li>Desarrollo de un software educativo: Aplicación para aprendizaje de idiomas como el inglés.</li>
+    <li>Campaña de recaudación de fondos para una causa benéfica.</li>
+    <li>Proyecto de reciclaje: Implementación de un programa de reciclaje de botellitas de amor.</li>
+    <li>Creación de un sitio web para la escuela.</li>
+    <li>Proyecto de robótica: Construcción de un robot para competencias.</li>
+    <li>Proyecto de conciencia sobre la salud mental.</li>
+    <li>Desarrollo de un plan de negocios sostenible.</li>
+    <li>Estudio sobre la diversidad cultural en la comunidad local.</li>
+    </ul>
+        
+
+  
+     
+
+   
+
+    
+    </section>
+</main>
+
+
+<footer>
+    <p>&copy; IE San José.</p>
+</footer>
+<script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slider img');
+
+    function showSlide(n) {
+        currentSlide = (n + slides.length) % slides.length;
+        const offset = -currentSlide * 100;
+        document.querySelector('.slider').style.transform = `translateX(${offset}%)`;
+    }
+
+    function changeSlide(n) {
+        showSlide(currentSlide + n);
+    }
+
+    // Inicializar el slider
+    showSlide(0);
+</script>
+</body>
+</html>
